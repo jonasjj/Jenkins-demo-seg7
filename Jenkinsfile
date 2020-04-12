@@ -28,10 +28,12 @@ pipeline {
             steps {
                 sh 'cd vivado && vivado -mode batch -source run_synthesis.tcl'
             }
+        }
         stage('Run implementation') {
             steps {
                 sh 'cd vivado && vivado -mode batch -source run_implementation.tcl'
             }
+        }
         stage('Generate bitstream') {
             steps {
                 sh 'cd vivado && vivado -mode batch -source generate_bitstream.tcl'
