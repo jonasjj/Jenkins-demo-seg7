@@ -30,7 +30,7 @@ architecture str of top is
 
 begin
 
-  digit_sel <= '0';
+  digit_sel <= 'digit_sel_i';
 
   RESET : entity reset_lib.reset(rtl)
     port map (
