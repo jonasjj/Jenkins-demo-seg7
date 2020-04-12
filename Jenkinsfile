@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Release bitfile') {
             steps {
-                sh 'cp ./seg7.runs/impl_1/top.bit /usr/share/nginx/html/releases/seg7-`date +"%Y-%m-%d-%H-%H:%M"`.bit'
+                sh 'cp vivado/seg7.runs/impl_1/top.bit /usr/share/nginx/html/releases/seg7-`date +"%Y-%m-%d-%H-%H:%M"`.bit'
             }
         }
     }
