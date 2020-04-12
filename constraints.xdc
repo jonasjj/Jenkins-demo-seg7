@@ -1,0 +1,22 @@
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+
+# Digilent 7-segment display connected to JA1 Pmod on ZedBoard
+set_property PACKAGE_PIN Y9 [get_ports clk]
+set_property PACKAGE_PIN AA8 [get_ports digit_sel]
+set_property PACKAGE_PIN Y11 [get_ports {segments[0]}]
+set_property PACKAGE_PIN AA11 [get_ports {segments[1]}]
+set_property PACKAGE_PIN Y10 [get_ports {segments[2]}]
+set_property PACKAGE_PIN AA9 [get_ports {segments[3]}]
+set_property PACKAGE_PIN AB11 [get_ports {segments[4]}]
+set_property PACKAGE_PIN AB10 [get_ports {segments[5]}]
+set_property PACKAGE_PIN AB9 [get_ports {segments[6]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segments[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports digit_sel]

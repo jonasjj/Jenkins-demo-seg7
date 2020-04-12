@@ -5,6 +5,8 @@ use ieee.numeric_std.all;
 library pck_lib;
 use pck_lib.sim.all;
 
+library seg7_lib;
+
 entity top_tb is
 end top_tb; 
 
@@ -18,7 +20,7 @@ begin
 
   clk <= not clk after sim_clk_period / 2;
 
-  DUT : entity seg7.top(str)
+  DUT : entity seg7_lib.top(str)
     port map (
       clk => clk,
       segments => segments,
