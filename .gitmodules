@@ -1,0 +1,28 @@
+[submodule "bcd_encoder"]
+	path = bcd_encoder
+	url = https://github.com/jonasjj/Jenkins-demo-bcd_encoder
+	branch = master
+[submodule "counter"]
+	path = counter
+	url = https://github.com/jonasjj/Jenkins-demo-counter
+	branch = master
+[submodule "digit_selector"]
+	path = digit_selector
+	url = https://github.com/jonasjj/Jenkins-demo-digit_selector
+	branch = master
+[submodule "output_mux"]
+	path = output_mux
+	url = https://github.com/jonasjj/Jenkins-demo-output_mux
+	branch = master
+[submodule "reset"]
+	path = reset
+	url = https://github.com/jonasjj/Jenkins-demo-reset
+	branch = master
+[submodule "seg7_encoder"]
+	path = seg7_encoder
+	url = https://github.com/jonasjj/Jenkins-demo-seg7_encoder
+	branch = master
+[submodule "packages"]
+	path = packages
+	url = https://github.com/jonasjj/Jenkins-demo-packages
+	branch = master
